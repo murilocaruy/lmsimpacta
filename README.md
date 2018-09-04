@@ -1,6 +1,9 @@
 # lmsimpacta
 Projeto do LMS para ser usado durante as aulas de TecWeb
 
+## Resultado
+
+O resultado do Frontend pode ser verificado na URL: https://tecweb-2s2018-ads2d.github.io/lmsimpacta/
 
 ## Aulas
 
