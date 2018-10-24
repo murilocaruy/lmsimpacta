@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block titulo %}
+    {{ atual.sigla }}
+{% endblock %}
+
+{% block conteudo %}
+    <h1>{{ atual.nome }}</h1>
+    <p>{{ atual.descricao }}</p>
+    <p>Coordenador: {{ atual.coordenador }}</p>
+    <h2>Disciplinas:</h2>
+    {% for disciplina in disciplinas %}
+    <p><a href="{% url 'curriculo:disciplina' atual.sigla disciplina.abrev %}">{{ disciplina.nome }}</a></p>
+    {% endfor %}
+
+{% endblock  %}
